@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.madarcic_sostaric7.HelloController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="151.20001220703125" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="452.0" minWidth="10.0" prefWidth="448.79998779296875" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+
+       <fx:include source="izbornik.fxml" />
+
+      <Label text="Pretraga Profesora" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Label>
+      <Label text="Šifra:" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Ime:" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Prezime:" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Titula:" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sifraProfesoraTextField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="imeProfesoraTextField" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="prezimeProfesoraTextField" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="titulaProfesoraTextField" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#dohvatiProfesore" text="Dohvati profesore" textAlignment="JUSTIFY" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+      <TableView fx:id="profesorTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="10" GridPane.rowSpan="2147483647">
+        <columns>
+          <TableColumn fx:id="sifraProfesoraTableColumn" prefWidth="91.19995421171188" text="Šifra" />
+          <TableColumn fx:id="imeProfesoraTableColumn" minWidth="0.0" prefWidth="179.99998474121094" text="Ime" />
+            <TableColumn fx:id="prezimeProfesoraTableColumn" prefWidth="185.5999755859375" text="Prezime" />
+            <TableColumn fx:id="titulaProfesoraTableColumn" prefWidth="146.4000244140625" text="Titula" />
+        </columns>
+      </TableView>
+   </children>
+</GridPane>

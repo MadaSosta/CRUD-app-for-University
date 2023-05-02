@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="25.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.madarcic_sostaric7.IzbornikController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="20.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Profesori">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showProfesoriPretraga" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#showProfesoriUnos" text="Unos" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Studenti">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showStudentiPretraga" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#showStudentiUnos" text="Unos" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Predmeti">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showPredmetiPretraga" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#showPredmetiUnos" text="Unos" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Ispiti">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showIspitiPretraga" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#showIspitiUnos" text="Unos" />
+               </items>
+            </Menu>
+         </menus>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </MenuBar>
+   </children>
+</AnchorPane>
